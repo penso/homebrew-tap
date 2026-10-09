@@ -3,6 +3,7 @@
 Homebrew tap for penso's projects. Every package installs as `penso/tap/<name>`:
 
 ```sh
+brew install penso/tap/agent-launcher
 brew install penso/tap/arbor
 brew install penso/tap/herdr-gpui
 brew install penso/tap/polyphony
@@ -18,6 +19,7 @@ brew install herdr-gpui
 
 | Package | Kind | Source |
 | --- | --- | --- |
+| `agent-launcher` | Formula | [penso/agent-launcher](https://github.com/penso/agent-launcher) |
 | `arbor` | Cask | [penso/arbor](https://github.com/penso/arbor) |
 | `herdr-gpui` | Cask | [penso/herdr-gpui](https://github.com/penso/herdr-gpui) |
 | `polyphony` | Formula | [penso/polyphony](https://github.com/penso/polyphony) |
