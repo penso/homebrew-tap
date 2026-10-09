@@ -1,22 +1,27 @@
 class AgentLauncher < Formula
   desc "Terminal inbox that dispatches coding agents to a repository's issues and PRs"
   homepage "https://github.com/penso/agent-launcher"
-  version "20261009.1"
   license "Apache-2.0"
 
   on_macos do
-    url "https://github.com/penso/agent-launcher/releases/download/v20261009.1/agent-launcher-20261009.1-universal-apple-darwin.tar.gz"
-    sha256 "28835b90c0ceb5b24adc04add2a309d77464f7545c8c21663170c3e7e64e3f87"
+    on_arm do
+      url "https://github.com/penso/agent-launcher/releases/download/v20261009.2/agent-launcher-20261009.2-aarch64-apple-darwin.tar.gz"
+      sha256 "4ef95f9ca7f50209b2b74fe035255df3b54f3c4dfeb5c586531ffa8755f06b89"
+    end
+    on_intel do
+      url "https://github.com/penso/agent-launcher/releases/download/v20261009.2/agent-launcher-20261009.2-x86_64-apple-darwin.tar.gz"
+      sha256 "0a553d458f1572a7e2c6c1d30112da1854e9b93bcd738b72d67be1adae3b411a"
+    end
   end
 
   on_linux do
-    on_intel do
-      url "https://github.com/penso/agent-launcher/releases/download/v20261009.1/agent-launcher-20261009.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "fa1b891e4d17d1c314809fbf3bdd82f97f8ae325839b0c64338327036c51fcdc"
-    end
     on_arm do
-      url "https://github.com/penso/agent-launcher/releases/download/v20261009.1/agent-launcher-20261009.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "153114deaf4400437647808173401429c23711170bfe723873dc942530910999"
+      url "https://github.com/penso/agent-launcher/releases/download/v20261009.2/agent-launcher-20261009.2-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "510820239194d7c1a1fa2233d7d88fce1b8bfc1bd82607efe519168236ca5147"
+    end
+    on_intel do
+      url "https://github.com/penso/agent-launcher/releases/download/v20261009.2/agent-launcher-20261009.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "67f86345135cb1e6e2069e89d69892d37f69814c586bcb659f538b07969ff0d9"
     end
   end
 
