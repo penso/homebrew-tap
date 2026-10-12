@@ -1,11 +1,11 @@
 cask "herdr-gpui" do
-  version "20261011.1"
-  sha256 "32f41740c21c406c6be085cd3790c1c3b3d38495c04b60830a870a7fae976c99"
+  version "20261012.1"
+  sha256 "2215f52c606a3aca3ad13463ea6b19a3b892c0bd2a927dee9bc611d51434d9a1"
 
   url "https://github.com/penso/herdr-gpui/releases/download/v#{version}/Herdr-#{version}-universal-apple-darwin.dmg"
   name "Herdr"
   desc "Native GUI client for an existing local Herdr daemon"
-  homepage "https://github.com/penso/herdr-gpui"
+  homepage "https://herdrui.dev"
 
   depends_on macos: :sonoma
 
