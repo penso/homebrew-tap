@@ -1,6 +1,6 @@
 cask "herdr-gpui" do
-  version "20261012.1"
-  sha256 "2215f52c606a3aca3ad13463ea6b19a3b892c0bd2a927dee9bc611d51434d9a1"
+  version "20261013.1"
+  sha256 "0bf88be2baec4a01a26578d77eec634f3bbb254d5d3f3075636fb417822bddfb"
 
   url "https://github.com/penso/herdr-gpui/releases/download/v#{version}/Herdr-#{version}-universal-apple-darwin.dmg"
   name "Herdr"
