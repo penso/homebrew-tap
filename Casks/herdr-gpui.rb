@@ -1,13 +1,15 @@
 cask "herdr-gpui" do
-  version "20261103.1"
-  sha256 "b7ba254cbc8c6b8243d0bfd8a4f4496bce2a5cb0fcd3c4f45dc3221bd8b4f110"
+  version "20261104.1"
+  sha256 "6a18cdea30a55de93af5d6a6aa64d91b76c91791c43d4ec256670dc958db0765"
 
-  url "https://github.com/penso/herdr-gpui/releases/download/v#{version}/Herdr-#{version}-universal-apple-darwin.dmg"
-  name "Herdr"
-  desc "Native GUI client for an existing local Herdr daemon"
-  homepage "https://herdrui.dev"
+  url "https://github.com/sheprd-labs/sheprd/releases/download/v#{version}/Sheprd-#{version}-universal-apple-darwin.dmg"
+  name "Sheprd"
+  desc "Sheprd native workspace for coding agents and terminals"
+  homepage "https://sheprd.org"
 
   depends_on macos: :sonoma
 
-  app "Herdr.app"
+  # The deployed updater reopens this path after upgrading the legacy cask.
+  app "Sheprd.app", target: "Herdr.app"
+  binary "#{appdir}/Herdr.app/Contents/MacOS/sheprd"
 end
