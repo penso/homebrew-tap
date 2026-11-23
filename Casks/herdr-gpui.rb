@@ -1,6 +1,6 @@
 cask "herdr-gpui" do
-  version "20261118.1"
-  sha256 "587c6beef74561c08cd66ec261ce807d6b4678026167d52151dc370b2eda165f"
+  version "20261123.1"
+  sha256 "d97a929d31bad8e28964cd5ff5c222cd9c3439938932c9a9abf2b8078b7f1016"
 
   url "https://github.com/sheprd-labs/sheprd/releases/download/v#{version}/Sheprd-#{version}-universal-apple-darwin.dmg"
   name "Sheprd"
